@@ -1,52 +1,33 @@
-# 🌬 CORE ENGINE — ATMOS GOVERNANCE (CANONICAL)
+# 🌬 ATMOS — Atmospheric Physics Engine
 
-File: `verticals/atmos/CORE_ATMOS_ENGINE_GOVERNANCE.md`  
-Engine Key: **ATMOS**  
-Authority Level: Engine Governance (Binding)  
-Status: ✅ BINDING | ✅ NON-OPTIONAL  
+ATMOS computes atmospheric-domain physics truth.
 
-## 1. Authority & Inheritance
+---
 
-ATMOS inherits CORE governance.
+## Engine Role
 
-## 2. Scope
+**Engine Type:** TRUTH_ENGINE  
+**Domain:** Atmospheric physics
 
-ATMOS models atmospheric behavior:
-- gas density and wave speed effects
-- humidity, pressure, temperature coupling
-- ionization indicators (where declared)
-- EM-air interaction parameters (where declared)
+---
 
-## 3. Non-Scope
+## What ATMOS Computes
 
-ATMOS may NOT:
-- function as a forecasting product
-- claim regulatory or safety compliance outcomes
-- access other engines’ data without CORE mediation
+- pressure, density, humidity fields
+- propagation modifiers
+- ionization proxies (if modeled)
 
-## 4. Determinism
+---
 
-Must log all environmental parameter sets and solver configs.
+## Prohibitions
 
-## 5. Required Artifacts
+ATMOS does NOT:
+- act as a weather forecast authority
+- issue operational directives
+- publish independently
 
-- `ENGINE_MANIFEST.json`
-- `RUN_CONDITIONS.json`
-- `SHA256SUMS.txt`
-- `ATMOS_STATE.json`
-- `DENSITY_FIELD.json`
-- `WAVE_SPEED_REPORT.json`
-- `IONIZATION_REPORT.json` (if computed)
-- `ARTIFACT_INDEX.json`
+---
 
-## 6. Safety & Misuse Controls
+## Governance
 
-Outputs must be labeled as modeled/derived, not “observed truth” unless sensor-fed via CORE.
-
-## 7. Publishing Rules
-
-Sealed run required.
-
-## 8. Amendments
-
-Governance review required.
+ATMOS is governed by CORE law.
